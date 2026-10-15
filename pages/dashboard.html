@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | AquaControl</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body data-page="dashboard">
+    <header class="navbar">
+      <a class="logo" href="../index.html"><span class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor"><path d="M480-100q-133 0-226.5-92T160-416q0-63 24.5-120.5T254-638l226-222 226 222q45 44 69.5 101.5T800-416q0 132-93.5 224T480-100Z"/></svg></span><span class="logo-text">Aqua<span class="highlight">Control</span></span><span class="badge-lab">LABS 11°</span></a>
+      <nav><a href="../index.html">Inicio</a><a class="active" href="dashboard.html">Dashboard</a><a href="retos.html">Retos</a><a href="guia.html">Guía</a><a href="reporte.html">Reportar</a></nav>
+    </header>
+    <main>
+      <section class="page-hero"><span class="pill-tag">Datos para tomar mejores decisiones</span><h1>Dashboard de <span class="text-blue">consumo hídrico</span></h1><p>Una vista rápida del desempeño de la institución y las condiciones ambientales actuales.</p></section>
+      <section class="page-content">
+        <div class="stat-grid">
+          <article class="card stat-card"><h3>Consumo promedio</h3><strong>45 L</strong><small>por estudiante / día</small></article>
+          <article class="card stat-card"><h3>Meta mensual</h3><strong class="text-green">-35%</strong><small>reducción proyectada</small></article>
+          <article class="card stat-card"><h3>Curso líder</h3><strong>11°B</strong><small>mejor desempeño semanal</small></article>
+          <article class="card stat-card"><h3>Alertas activas</h3><strong>2</strong><small>requieren revisión</small></article>
+        </div>
+        <div class="content-grid">
+          <article class="card chart-card"><div class="section-heading"><h2>Consumo semanal</h2><p>Litros por estudiante</p></div><div class="bar-chart"><div class="bar" style="height: 82%"><span>Lun</span></div><div class="bar" style="height: 70%"><span>Mar</span></div><div class="bar" style="height: 76%"><span>Mié</span></div><div class="bar" style="height: 58%"><span>Jue</span></div><div class="bar" style="height: 48%"><span>Vie</span></div></div></article>
+          <article class="card"><div class="section-heading"><h2>Clima local</h2><p>Referencia para planear el consumo</p></div><strong id="weather-value" class="card-value">Consultando...</strong><p id="weather-details" class="card-desc">Conectando con Open-Meteo.</p><span id="weather-status" class="status status-warning">Cargando</span></article>
+        </div>
+      </section>
+    </main>
+    <footer><p>© <span data-year></span> AquaControl. Institución Educativa Ciudadela 2000.</p></footer>
+    <script src="../js/pages.js"></script>
+  </body>
+</html>
